@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid gray;*/
+}
+
+
+body {
+    background-color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+:root {
+    --color-principal: white;
+    --color-secundario: #3FBA3B;
+    --color-calido: #BB202C;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 1px solid var(--color-principal);
+}
+
+p {
+    color: var(--color-claro);
+    margin-bottom: 10px;
+}
+
+.hero {
+    height: 100px;
+    background-color: black;
+}
+
+img {
+    width: 750px;
+    height: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-navegacion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid gray */
+}
+
+:root {
+    --color-principal: #48d148;
+    --color-secundario: #e9bf36;
+    --color-claro: #f0f0f0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-principal);
+    margin-bottom: 10px;
+}
+
+h2 {
+    border-bottom: 1px solid var(--color-principal);
+}
+
+
+
+p {
+    margin-bottom: 10px;
+}
+
+
+.hero {
+    height: 100px;
+    background-color: var(--color-claro);
+}
+
+.titulo-principal {
+    text-align: center;
+}
+
+
+.titulo-principal {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenido-principal {
+    background-color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+span {
+    color: var(--color-calido);
+
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.menu-navegacion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu-navegacion li {
+    margin-bottom: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-navegacion li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    background-color: var(--color-principal);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-align:center;
+    border-radius: 10px;
+}
+
+/* grande */
+@media (min-width: 992px) {
+    .contenido {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.footer-principal {
+    font-family: 'big-shoulders', sans-serif;
+    color:var(--color-claro);
+    text-align: center;
+    margin-top: 12px;
+
+}
