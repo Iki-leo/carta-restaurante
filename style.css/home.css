@@ -7,7 +7,8 @@
 
 body {
     background-color: black;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -17,19 +18,7 @@ body {
 
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--color-principal);
-    margin-bottom: 10px;
-}
 
-h2 {
-    border-bottom: 1px solid var(--color-principal);
-}
 
 p {
     color: var(--color-claro);
@@ -57,18 +46,6 @@ img {
     padding-right: 10px;
 } 
 
-* {
-    margin: 0;
-    padding: 0;
-    /* outline: 1px solid gray */
-}
-
-:root {
-    --color-principal: #48d148;
-    --color-secundario: #e9bf36;
-    --color-claro: #f0f0f0;
-}
-
 h1,
 h2,
 h3,
@@ -76,17 +53,18 @@ h4,
 h5,
 h6 {
     color: var(--color-principal);
-    margin-bottom: 10px;
+    
 }
 
 h2 {
-    border-bottom: 1px solid var(--color-principal);
+    border-bottom: 2px solid #fafafa; /* Agrega un borde en la parte inferior */
+    padding-bottom: 5px; /* Añade espacio entre el texto y el borde */
 }
 
 
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -108,12 +86,12 @@ p {
 .contenido-principal {
     background-color: black;
     font-size: 20px;
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: auto;
 }
 
 span {
     color: var(--color-calido);
-
 }
 
 .navegacion-principal {
@@ -126,24 +104,33 @@ span {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     list-style: none;
     width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
+    
 }
 
 .menu-navegacion li {
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .menu-navegacion li a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3FBA3B;
     text-decoration: none;
-    background-color: var(--color-principal);
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     display: block;
     text-align:center;
     border-radius: 10px;
+    box-shadow: 0 0 15px var(--color-secundario);
+}
+
+
+.footer-principal {
+    font-family: 'big-shoulders', sans-serif;
+    color:var(--color-claro);
+    text-align: center;
+    margin-top: 12px;
+
 }
 
 /* grande */
@@ -154,10 +141,3 @@ span {
     }
 }
 
-.footer-principal {
-    font-family: 'big-shoulders', sans-serif;
-    color:var(--color-claro);
-    text-align: center;
-    margin-top: 12px;
-
-}

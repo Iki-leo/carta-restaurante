@@ -1,0 +1,144 @@
+*,::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: var(--color-principal);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+    --color-principal: white;
+    --color-secundario: #3FBA3B;
+    --color-calido: #BB202C;
+
+}
+
+.contenedor1 {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--color-secundario);
+}
+
+.contenedor1 img{
+    width: 100%;
+    height:100%;
+    object-fit:cover ;
+}
+
+
+.wrap-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    color: var(--color-principal);
+    margin-bottom: 10px; 
+}
+
+.contenedor2 {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    position:relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--color-secundario);
+}
+
+.contenedor2 img{
+    width: 100%;
+    height:100%;
+    object-fit:cover ;
+}
+
+
+.wrap-texto2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+.contenedor3 {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--color-secundario);
+}
+
+.contenedor3 img{
+    width: 100%;
+    height:100%;
+    object-fit:cover ;
+}
+
+
+.wrap-texto3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+
+
+.contenedor4 {
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    margin: 200px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 10px var(--color-secundario);
+}
+
+.contenedor4 img{
+    width: 100%;
+    height:100%;
+    object-fit:cover ;
+}
+
+
+.wrap-texto4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    border-radius: 10px; 
+}

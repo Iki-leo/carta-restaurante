@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid gray;*/
+
 }
 
 body {
@@ -16,21 +16,32 @@ body {
     --color-calido: #BB202C;
 }
 
+img {
+    width: 750px;
+    height: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
 
 ul {
-    list-style-type: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el espacio entre elementos de la lista */
+    list-style-type: none; 
+    padding: 0;
 }
 
 ul li img {
-    order: 1; /* Cambia el orden de la imagen */
+    margin-top: 20px;
+    order: 1; 
 }
 
 ul li img {
     
-    border: 2px solid #ccc; /* Color del borde y grosor */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px var(--color-secundario); /* Sombra suave */
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px var(--color-secundario); 
 }
 
 ul li img {
@@ -38,7 +49,7 @@ ul li img {
     height: auto;
     border: 2px solid #ccc;
     border-radius: 30px;
-    margin-bottom: 100px; /* Espacio entre las imágenes */
+    margin-bottom: 100px; 
 }
 
 li {
@@ -46,21 +57,208 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 80px; /* Ajusta este valor según necesites */
+    margin-bottom: 80px; 
 }
 
 span {
     margin-bottom: 10px;
     font-size: 30px;
     color: var(--color-secundario);
-    margin-top: 10px; /* Ajusta este valor según necesites */
+    margin-top: 10px; 
 }
 
 .precio {
-    margin-top: 10px; /* Puedes ajustar este valor según lo necesites */
+    font-size: 25px;
+    margin-top: 10px; 
 }
 
 .descripcion {
+    font-size: 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
+
+
+
+
+
+#picante {
+    width: 100px;
+    height: 100px;
+}
+.poco-picante{
+    display: flex;
+    align-items: center;
+}
+
+
+#picante2 {
+    width: 100px;
+    height: 100px;
+}
+.mas-picante {
+    display: flex;
+    align-items: center;
+}
+
+
+
+#picante3 {
+    width: 100px;
+    height: 100px;
+}
+.mas-mas-picante {
+    justify-content:baseline;
+    display: flex;
+    align-items: center;
+}
+
+
+.contenedor-flex {
+    display: flex; 
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.contenedor-flex div {
+    flex: 1; 
+    max-width: 200px; 
+    text-align: center; 
+}
+
+
+.platos {
+    margin-top: 100px;
+}
+
+.nivel-picante {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+
+
+
+
+
+
+
+.ajad-pepino {
+    margin-top: 100px;
+    text-align: center;
+}
+.ajad-pepino img {
+    margin-bottom: 100px;
+}
+
+
+.currylentejas {
+    margin-top: 100px;
+    text-align: center;
+}
+.currylentejas img {
+    margin-bottom: 100px;
+}
+
+
+
+.curry-rojo-langostinos {
+    margin-top: 100px;
+    text-align: center;
+}
+.curry-rojo-langostinos img {
+    margin-bottom: 100px;
+}
+
+
+
+.curry-rojo-pollo {
+    margin-top: 100px;
+    text-align: center;
+}
+.curry-rojo-pollo img {
+    margin-bottom: 100px;
+}
+
+
+.curry-verde-pollo {
+    margin-top: 100px;
+    text-align: center;
+}
+.curry-verde-picante img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+
+.curry-verduras-mar {
+    margin-top: 100px;
+    text-align: center;
+}
+.curry-verde-verduras-picante img {
+    margin-bottom: 100px;
+}
+
+
+.noddles-calabaza {
+    margin-top: 100px;
+    text-align: center;
+}
+.noddles-calabaza img {
+    margin-bottom: 100px;
+}
+
+
+.pad-thai {
+    margin-top: 100px;
+    text-align: center;
+}
+.pad-thai img {
+    margin-bottom: 100px;
+}
+
+
+.curry-amarillo-pollo{
+    margin-top: 100px;
+    text-align: center;
+}
+.curry-amarillo-picante img {
+    margin-bottom: 100px;
+}
+
+
+.sopa-tom-kha-kai {
+    margin-top: 100px;
+    text-align: center;
+}
+.sopa-tom-kha-kai-picante img {
+    margin-bottom: 200px;
+}
+
+
+.tofu-curry {
+    margin-top: 100px;
+    text-align: center;
+}
+.tofu-curry img {
+    margin-bottom: 100px;
+}
+
+
+.tom-yam-kung {
+    margin-top: 100px;
+    text-align: center;
+}
+.tom-yam-kung-picante img {
+    margin-bottom: 200px;
+}
+
+
+
+
 
