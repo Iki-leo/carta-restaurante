@@ -16,6 +16,58 @@ body {
     --color-calido: #BB202C;
 }
 
+.navegacion-principal {
+    display: flex;
+    margin:auto;
+    position: fixed;
+    width: 150px;
+    height: 150px;
+}
+
+.menu-navegacion {
+    /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
+    display: flex;
+    /*Establece el ancho del elemento dentro del contenedor (90%)*/
+    width: auto;
+    height: auto;
+    /*max-width: 1000px;*/
+    /*margin: auto;*/
+    /*tamaño del texto dentro del menú de navegación*/
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3FBA3B;
+    /*Elimina los marcadores de lista */
+    list-style: none;
+    /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
+    padding: 0px;
+    /*plica esquinas redondeadas*/
+    border-radius: 10px;
+    /* Añade una sombra alrededor del elemento.*/
+    box-shadow: 0 0 25px var(--color-secundario);
+}
+
+    
+
+/*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
+.menu-navegacion li  a {
+    text-align: center;
+    position: relative;
+    /*quita la decoración predeterminada de los enlaces*/
+    text-decoration: none;
+    /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
+    padding: 10px;
+    /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
+    display: block;
+    color: var(--color-principal);
+}
+
+
+
+
+
+
+/*img). Establecen un ancho y alto de 750 píxeles, centran la imagen en el bloque usando margin-left y margin-right, y se aseguran de que sea un elemento de tipo bloque display: block;*/
 img {
     width: 750px;
     height: 750px;
@@ -24,239 +76,97 @@ img {
     margin-right: auto;
 }
 
+/*Reglas que se aplican en el contenedor*/
+.picante {
+    display: flex;
+    margin:auto;
+    position: relative;
+}
+/*Reglas que se aplican en la imagen dentro del contenedor*/
+.picante img {
+    width: 250px;
+    height: 250px; 
+    display: block;
+    margin: auto;
+}
+
+
+/*el resto de elementos varian sus estilos*/
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-calido);
+    text-align: center;
+}
+
+
+
 
 
 
 ul {
     list-style-type: none; 
+    /*elimina cualquier relleno interno (espacio entre el contenido y el borde) de los elementos <ul> en tu documento HTML.*/
     padding: 0;
 }
 
-ul li img {
-    margin-top: 20px;
-    order: 1; 
-}
+
 
 ul li img {
-    
-    border: 2px solid #ccc; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px var(--color-secundario); 
-}
-
-ul li img {
+    /*width: 500px;: Establece el ancho de las imágenes a 500 píxeles.
+height: auto;: Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción original de la imagen después de cambiar el ancho.*/
     width: 500px;
     height: auto;
-    border: 2px solid #ccc;
+    border: 3px solid var(--color-principal);
     border-radius: 30px;
+    box-shadow: 0 0 25px var(--color-secundario);
+    /*margin-bottom: 100px;: Añade un margen de 100 píxeles en la parte inferior de las imágenes.
+margin-top: 20px;: Añade un margen de 20 píxeles en la parte superior de las imágenes.*/
     margin-bottom: 100px; 
+    margin-top: 20px;
 }
 
 li {
+    /*contenedor de la lista como un contenedor flexible. Esto significa que los elementos hijos (en este caso, el contenido dentro de cada <li>) pueden ser dispuestos en filas o columnas, y pueden ser alineados y distribuidos de varias maneras.*/
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 80px; 
+    margin-bottom: 200px; 
+
 }
 
 span {
     margin-bottom: 10px;
     font-size: 30px;
-    color: var(--color-secundario);
+    color:var(--color-secundario);
     margin-top: 10px; 
 }
 
 .precio {
+    color: var(--color-principal);
     font-size: 25px;
     margin-top: 10px; 
 }
 
 .descripcion {
-    font-size: 20px;
+    color: var(--color-principal);
+    font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-
-
-
-
-#picante {
-    width: 100px;
-    height: 100px;
+.nombre-plato {
+    font-weight: bold;
+    text-decoration: underline;
 }
-.poco-picante{
-    display: flex;
-    align-items: center;
-}
-
-
-#picante2 {
-    width: 100px;
-    height: 100px;
-}
-.mas-picante {
-    display: flex;
-    align-items: center;
-}
-
-
-
-#picante3 {
-    width: 100px;
-    height: 100px;
-}
-.mas-mas-picante {
-    justify-content:baseline;
-    display: flex;
-    align-items: center;
-}
-
-
-.contenedor-flex {
-    display: flex; 
-    margin: 20px;
-    padding: 10px;
-    align-items: center;
-    flex-wrap: wrap; 
-}
-
-.contenedor-flex div {
-    flex: 1; 
-    max-width: 200px; 
-    text-align: center; 
-}
-
 
 .platos {
+
     margin-top: 100px;
 }
 
-.nivel-picante {
-    display: flex; 
-    justify-content: space-around; 
-    align-items: center; 
-    flex-wrap: wrap; 
-}
 
-
-
-
-
-
-
-
-.ajad-pepino {
-    margin-top: 100px;
-    text-align: center;
-}
-.ajad-pepino img {
-    margin-bottom: 100px;
-}
-
-
-.currylentejas {
-    margin-top: 100px;
-    text-align: center;
-}
-.currylentejas img {
-    margin-bottom: 100px;
-}
-
-
-
-.curry-rojo-langostinos {
-    margin-top: 100px;
-    text-align: center;
-}
-.curry-rojo-langostinos img {
-    margin-bottom: 100px;
-}
-
-
-
-.curry-rojo-pollo {
-    margin-top: 100px;
-    text-align: center;
-}
-.curry-rojo-pollo img {
-    margin-bottom: 100px;
-}
-
-
-.curry-verde-pollo {
-    margin-top: 100px;
-    text-align: center;
-}
-.curry-verde-picante img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 100px;
-}
-
-
-.curry-verduras-mar {
-    margin-top: 100px;
-    text-align: center;
-}
-.curry-verde-verduras-picante img {
-    margin-bottom: 100px;
-}
-
-
-.noddles-calabaza {
-    margin-top: 100px;
-    text-align: center;
-}
-.noddles-calabaza img {
-    margin-bottom: 100px;
-}
-
-
-.pad-thai {
-    margin-top: 100px;
-    text-align: center;
-}
-.pad-thai img {
-    margin-bottom: 100px;
-}
-
-
-.curry-amarillo-pollo{
-    margin-top: 100px;
-    text-align: center;
-}
-.curry-amarillo-picante img {
-    margin-bottom: 100px;
-}
-
-
-.sopa-tom-kha-kai {
-    margin-top: 100px;
-    text-align: center;
-}
-.sopa-tom-kha-kai-picante img {
-    margin-bottom: 200px;
-}
-
-
-.tofu-curry {
-    margin-top: 100px;
-    text-align: center;
-}
-.tofu-curry img {
-    margin-bottom: 100px;
-}
-
-
-.tom-yam-kung {
-    margin-top: 100px;
-    text-align: center;
-}
-.tom-yam-kung-picante img {
-    margin-bottom: 200px;
-}
 
 
 

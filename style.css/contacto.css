@@ -14,8 +14,50 @@ body {
     --color-principal: white;
     --color-secundario: #3FBA3B;
     --color-calido: #BB202C;
-
 }
+
+.navegacion-principal {
+    text-align: center;
+    
+}
+
+.menu-navegacion {
+    /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
+    display: flex;
+    /*Establece el ancho del elemento dentro del contenedor (90%)*/
+    width: 100%;
+    /*max-width: 1000px;*/
+    /*margin: auto;*/
+    /*tamaño del texto dentro del menú de navegación*/
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3FBA3B;
+    /*Elimina los marcadores de lista */
+    list-style: none;
+    /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
+    padding: 0px;
+    /*plica esquinas redondeadas*/
+    border-radius: 10px;
+    /* Añade una sombra alrededor del elemento.*/
+    box-shadow: 0 0 25px var(--color-secundario);
+}
+
+    
+
+/*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
+.menu-navegacion li  a {
+    /*quita la decoración predeterminada de los enlaces*/
+    text-decoration: none;
+    /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
+    padding: 10px;
+    /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
+    display: block;
+    color: var(--color-principal);
+}
+
+
+
 
 .contenedor1 {
     width: 800px;
