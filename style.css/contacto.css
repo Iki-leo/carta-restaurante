@@ -27,6 +27,12 @@ body {
     --color-calido: #BB202C;
 }
 
+h1 {
+    margin: 20px ;
+}
+
+
+
 .navegacion-principal {
     text-align: center;
     width: 100%;
