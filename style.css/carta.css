@@ -3,6 +3,7 @@
     padding: 0;
 }
 
+
 /* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
 @media (min-width: 576px) {
     /*Se refiere a cualquier elemento con la clase "contenido"*/
@@ -14,17 +15,21 @@
     }
 }
 
+
 body {
     background-color: black;
     color: var(--color-principal);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 /*s necesario ponerlo en todas los documentos?*/
 :root {
     --color-principal: white;
     --color-secundario: #3FBA3B;
     --color-calido: #BB202C;
 }
+
 
 .navegacion-principal {
     display: flex;
@@ -34,14 +39,13 @@ body {
     height: 150px;
 }
 
+
 .menu-navegacion {
     /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
     display: flex;
     /*Establece el ancho del elemento dentro del contenedor (90%)*/
     width: auto;
     height: auto;
-    /*max-width: 1000px;*/
-    /*margin: auto;*/
     /*tamaño del texto dentro del menú de navegación*/
     color: #fff;
     font-size: 35px;
@@ -57,7 +61,6 @@ body {
     box-shadow: 0 0 25px var(--color-secundario);
 }
 
-    
 
 /*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
 .menu-navegacion li  a {
@@ -71,10 +74,6 @@ body {
     display: block;
     color: var(--color-principal);
 }
-
-
-
-
 
 
 /*img). Establecen un ancho y alto de 750 píxeles, centran la imagen en el bloque usando margin-left y margin-right, y se aseguran de que sea un elemento de tipo bloque display: block;*/
@@ -92,6 +91,8 @@ img {
     margin:auto;
     position: relative;
 }
+
+
 /*Reglas que se aplican en la imagen dentro del contenedor*/
 .picante img {
     width: 250px;
@@ -99,8 +100,6 @@ img {
     display: block;
     margin: auto;
 }
-
-
 /*el resto de elementos varian sus estilos*/
 
 p {
@@ -110,16 +109,11 @@ p {
 }
 
 
-
-
-
-
 ul {
     list-style-type: none; 
     /*elimina cualquier relleno interno (espacio entre el contenido y el borde) de los elementos <ul> en tu documento HTML.*/
     padding: 0;
 }
-
 
 
 ul li img {
@@ -136,6 +130,7 @@ margin-top: 20px;: Añade un margen de 20 píxeles en la parte superior de las i
     margin-top: 20px;
 }
 
+
 li {
     /*contenedor de la lista como un contenedor flexible. Esto significa que los elementos hijos (en este caso, el contenido dentro de cada <li>) pueden ser dispuestos en filas o columnas, y pueden ser alineados y distribuidos de varias maneras.*/
     display: flex;
@@ -143,8 +138,8 @@ li {
     align-items: center;
     text-align: center;
     margin-bottom: 200px; 
-
 }
+
 
 span {
     margin-bottom: 10px;
@@ -153,11 +148,13 @@ span {
     margin-top: 10px; 
 }
 
+
 .precio {
     color: var(--color-principal);
     font-size: 25px;
     margin-top: 10px; 
 }
+
 
 .descripcion {
     color: var(--color-principal);
@@ -170,6 +167,7 @@ span {
     font-weight: bold;
     text-decoration: underline;
 }
+
 
 .platos {
 

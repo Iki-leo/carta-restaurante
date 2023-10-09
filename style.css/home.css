@@ -4,8 +4,9 @@ margin: 0; y padding: 0; establecen el margen y el relleno de todos los elemento
 * {
     margin: 0;
     padding: 0;
-    /* outline: 1px solid gray;*/
+
 }
+
 
 /* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
 @media (min-width: 576px) {
@@ -18,11 +19,13 @@ margin: 0; y padding: 0; establecen el margen y el relleno de todos los elemento
     }
 }
 
+
 /*establece el color de fondo y el tipo de letra que se utilizará */
 body {
     background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 /*  "root" es donde puedes guardar colores y valores que quieras usar en tu página web. I*/
 :root {
@@ -30,6 +33,7 @@ body {
     --color-secundario: #3FBA3B;
     --color-calido: #BB202C;
 }
+
 
 /*este bloque dice que a todos se  les aplicará el color*/
 h1,
@@ -41,11 +45,13 @@ h6 {
     color: var(--color-principal);
 }
 
+
 /*le esta aplicando un estilo concreto*/
 span {
     color: var(--color-calido);
     font-weight: bold;
 }
+
 
 /*se le aplica una serie de estilos */
 h2 {
@@ -58,6 +64,7 @@ h2 {
     /* Añade espacio entre el texto y el borde */
     padding-bottom: 10px; 
 }
+
 
 /*contenedor de la imagen*/
 .logo-zaap {
@@ -72,12 +79,15 @@ h2 {
     
 }
 
+
 .logo-zaap img {
     /*anchura máxima de la imagen se establece en un 150% del tamaño del contenedor */
     max-width: 150%;
     /*establece la altura máxima de la imagen en un 150% del  tamaño del contenedor*/
     max-height: 150%;
 }
+
+
 .contenido {
     /*Agrega un espacio en la parte superior del contenido. Esto es un espacio entre el borde superior del contenedor y el contenido de dentro*/
     padding-top: 10px;
@@ -91,19 +101,19 @@ h2 {
     background-color: black; 
 }
 
+
 /*cualquier texto o contenido dentro de .navegacion-principal se centrará*/
 .navegacion-principal {
     text-align: center;
     
 }
 
+
 .menu-navegacion {
     /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
     display: flex;
     /*Establece el ancho del elemento dentro del contenedor (90%)*/
     width: 90%;
-    /*max-width: 1000px;*/
-    /*margin: auto;*/
     /*tamaño del texto dentro del menú de navegación*/
     color: #fff;
     font-size: 35px;
@@ -119,7 +129,6 @@ h2 {
     box-shadow: 0 0 25px var(--color-secundario);
 }
 
-    
 
 /*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
 .menu-navegacion li  a {
@@ -131,7 +140,6 @@ h2 {
     display: block;
     color: var(--color-principal);
 }
-
 
 
 /*estilos se aplican al elemento "footer", que generalmente se encuentra al final de una página web y contiene información como créditos, enlaces de contacto, etc.*/
