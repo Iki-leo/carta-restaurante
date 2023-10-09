@@ -17,6 +17,15 @@ Este proyecto consiste en realizar una pagina web con html y css.
 ## Sobre el proyecto  🔎
 Decidí esta temática porque me encanta la comida asiática
 ## Deploy 🚀
+-Configuración del servidor
+-Variables de entorno
+-Instrucciones de despliegue
+-Configuración de proxy o redirección de trafico
+-Configuración de certificados SSL
+-Scripts de Post-despliegue
+-Configuración de monitoreo y registro
+-Credenciales de acceso remoto
+
 <div align="center">
     https://github.com/Iki-leo/carta-restaurante.git
 </div>
