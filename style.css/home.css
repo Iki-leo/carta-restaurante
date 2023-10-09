@@ -7,6 +7,16 @@ margin: 0; y padding: 0; establecen el margen y el relleno de todos los elemento
     /* outline: 1px solid gray;*/
 }
 
+/* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
+@media (min-width: 576px) {
+    /*Se refiere a cualquier elemento con la clase "contenido"*/
+    .contenido {
+        /**diseño flexible para el elemento "contenido", lo que significa que sus elementos secundarios (como divs o elementos de lista) pueden ajustarse y reorganizarse según el espacio disponible.*/
+        display: flex;
+        /*Agrega un espacio de 20 píxeles entre los elementos secundarios de "contenido". Esto proporciona un espaciado uniforme entre ellos.*/
+        gap: 20px;
+    }
+}
 
 /*establece el color de fondo y el tipo de letra que se utilizará */
 body {
@@ -132,14 +142,5 @@ h2 {
     margin-top: 20px;
 }
 
-/* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
-@media (min-width: 992px) {
-    /*Se refiere a cualquier elemento con la clase "contenido"*/
-    .contenido {
-        /**diseño flexible para el elemento "contenido", lo que significa que sus elementos secundarios (como divs o elementos de lista) pueden ajustarse y reorganizarse según el espacio disponible.*/
-        display: flex;
-        /*Agrega un espacio de 20 píxeles entre los elementos secundarios de "contenido". Esto proporciona un espaciado uniforme entre ellos.*/
-        gap: 20px;
-    }
-}
+
 

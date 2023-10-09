@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+/* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
+@media (min-width: 576px) {
+    /*Se refiere a cualquier elemento con la clase "contenido"*/
+    .contenido {
+        /**diseño flexible para el elemento "contenido", lo que significa que sus elementos secundarios (como divs o elementos de lista) pueden ajustarse y reorganizarse según el espacio disponible.*/
+        display: flex;
+        /*Agrega un espacio de 20 píxeles entre los elementos secundarios de "contenido". Esto proporciona un espaciado uniforme entre ellos.*/
+        gap: 20px;
+    }
+}
+
 body {
     background-color: black;
     color: var(--color-principal);
@@ -38,9 +49,9 @@ body {
     /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
     padding: 0px;
     /*plica esquinas redondeadas*/
-    border-radius: 10px;
+    border-radius: 50px;
     /* Añade una sombra alrededor del elemento.*/
-    box-shadow: 0 0 25px var(--color-secundario);
+    box-shadow: 0 0 100px var(--color-secundario);
 }
 
     
@@ -82,7 +93,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px; 
     border-radius: 10px; 
 }

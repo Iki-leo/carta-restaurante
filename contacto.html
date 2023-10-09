@@ -21,7 +21,7 @@
             </li>
         </ul>
     </nav>
-
+<!--wrap se utiliza para crear un contenedor o caja que agrupa y envuelve el contenido dentro de él. El nombre "wrap" proviene del inglés y significa "envolver"-->
 <section class="contenedor1">
     <img src="./imagenes/jetty.jpg">
     
@@ -52,9 +52,9 @@
 
         <label for="email">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
+<!--Lo más importante en este contexto es el atributo required. Cuando se agrega required a un campo de formulario, indica que ese campo debe ser completado antes de que el formulario pueda ser enviado. -->
+        <label for="mensaje">Correo Electrónico:</label>
+        <input type="mensaje" id="mensaje" name="mensaje" required>
 
         <input type="submit" value="Enviar">
     </form>
@@ -65,6 +65,7 @@
     <img id="redes" src="./imagenes/rice-plantation-.jpg" alt="rice-plantation">
     <div class="wrap-texto3">
         <img src="./imagenes/redes-sociales.jpg" alt="Redes sociales">
+        <!--<figcaption>: Es una etiqueta que se usa para proporcionar una descripción o leyenda para un elemento multimedia. En este caso, se utiliza para dar un mensaje: "Siguenos por nuestras redes!".-->
         <figcaption>
             Siguenos por nnuestras redes!
         </figcaption>
@@ -72,16 +73,18 @@
         
 </section>
 
-
+<!-- Es un elemento HTML que permite embeber contenido de otro sitio web dentro de tu página. En este caso, se está embebiendo un mapa de Google de Tailandia.-->
 <section class="contenedor4">
-    <iframe
-    width="600"
-    height="450"
-    frameborder="0"
-    style="border:0"
-    src="https://www.google.es/maps/place/Tailandia/@13.0389969,101.490104,6z/data=!3m1!4b1!4m6!3m5!1s0x304d8df747424db1:0x9ed72c880757e802!8m2!3d15.870032!4d100.992541!16zL20vMDdmMXg?entry=ttu"
-    allowfullscreen
-></iframe>
+    <div>
+        <iframe
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0"
+            src="https://www.google.es/maps/place/Tailandia/@13.0389969,101.490104,6z/data=!3m1!4b1!4m6!3m5!1s0x304d8df747424db1:0x9ed72c880757e802!8m2!3d15.870032!4d100.992541!16zL20vMDdmMXg?entry=ttu"
+            allowfullscreen
+        ></iframe>
+    </div>
 </section>
 
     

@@ -25,7 +25,7 @@ Decidí esta temática porque me encanta la comida asiática
 
 ## Vistas
 Ejemplo
-<img src="./img/cat.jpg">  
+  
 
 
 ## Contacto

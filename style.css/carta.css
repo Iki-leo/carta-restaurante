@@ -1,7 +1,17 @@
 * {
     margin: 0;
     padding: 0;
+}
 
+/* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
+@media (min-width: 576px) {
+    /*Se refiere a cualquier elemento con la clase "contenido"*/
+    .contenido {
+        /**diseño flexible para el elemento "contenido", lo que significa que sus elementos secundarios (como divs o elementos de lista) pueden ajustarse y reorganizarse según el espacio disponible.*/
+        display: flex;
+        /*Agrega un espacio de 20 píxeles entre los elementos secundarios de "contenido". Esto proporciona un espaciado uniforme entre ellos.*/
+        gap: 20px;
+    }
 }
 
 body {
@@ -9,7 +19,7 @@ body {
     color: var(--color-principal);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+/*s necesario ponerlo en todas los documentos?*/
 :root {
     --color-principal: white;
     --color-secundario: #3FBA3B;
