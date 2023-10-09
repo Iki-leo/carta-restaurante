@@ -34,9 +34,9 @@ Decidí esta temática porque me encanta la comida asiática
 
 ## Vistas
 Ejemplo
-<img src="./capturas-deploy/imagen-deploy1.png">
-<img src="./capturas-deploy/imagen-deploy2.png">
-<img src="./capturas-deploy/imagen-deploy3.png">
+<img src=".imagenes/capturas-deploy/imagen-deploy1.png">
+<img src=".imagenes/capturas-deploy/imagen-deploy2.png">
+<img src=".imagenes/capturas-deploy/imagen-deploy3.png">
 
 
 ## Contacto
