@@ -206,3 +206,11 @@ ul li {
     padding: 20px; 
     border-radius: 10px; 
 }
+
+/*estilos se aplican al elemento "footer", que generalmente se encuentra al final de una página web y contiene información como créditos, enlaces de contacto, etc.*/
+.footer-principal {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--color-principal);
+    text-align: center;
+    margin-top: 20px;
+}
