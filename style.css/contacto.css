@@ -17,6 +17,128 @@
 }
 
 
+/*contenedor de la imagen*/
+.logo-zaap {
+    /*contenedor flexible*/
+        display: flex;
+    /*justify y align centran el contenido horizontal y  verticalmente*/
+        justify-content: center;
+        align-items: center;
+    /*height en este caso me ocupa toda la pantalla*/
+        height: 100vh;
+        background-color: black;
+    }
+
+    
+    
+    .logo-zaap img {
+        /*anchura máxima de la imagen se establece en un 150% del tamaño del contenedor */
+        max-width: 150%;
+        /*establece la altura máxima de la imagen en un 150% del  tamaño del contenedor*/
+        max-height: 150%;
+    }
+    
+    
+    .contenido {
+        flex-direction: column;
+        /*Centra los elementos*/
+        align-items: center;
+    }
+    
+    .navegacion-principal {
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    
+    
+    .menu-navegacion {
+        /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
+        display: flex;
+        /*Establece el ancho del elemento dentro del contenedor (90%)*/
+        width: 100%;
+        /*tamaño del texto dentro del menú de navegación*/
+        color: #fff;
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        background-color: #3FBA3B;
+        /*Elimina los marcadores de lista */
+        list-style: none;
+        /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
+        padding: 10px;
+        /*plica esquinas redondeadas*/
+        border-radius: 10px;
+        /* Añade una sombra alrededor del elemento.*/
+        box-shadow: 0 0 25px var(--color-secundario);
+    }
+    
+    
+    /*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
+    .menu-navegacion li  a {
+        /*quita la decoración predeterminada de los enlaces*/
+        text-decoration: none;
+        /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
+        padding: 0px;
+        /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
+        display: flex;
+        color: var(--color-principal);
+    }
+    
+
+/*img). Establecen un ancho y alto de 750 píxeles, centran la imagen en el bloque usando margin-left y margin-right, y se aseguran de que sea un elemento de tipo bloque display: block;*/
+img {
+    width: 750px;
+    height: 750px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--color-principal);
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none; 
+    /*elimina cualquier relleno interno (espacio entre el contenido y el borde) de los elementos <ul> en tu documento HTML.*/
+    padding: 0;
+}
+
+
+ul li img {
+    /*width: 500px;: Establece el ancho de las imágenes a 500 píxeles.
+height: auto;: Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción original de la imagen después de cambiar el ancho.*/
+    width: 500px;
+    height: auto;
+    border: 3px solid var(--color-principal);
+    border-radius: 30px;
+    box-shadow: 0 0 25px var(--color-secundario);
+    /*margin-bottom: 100px;: Añade un margen de 100 píxeles en la parte inferior de las imágenes.
+margin-top: 20px;: Añade un margen de 20 píxeles en la parte superior de las imágenes.*/
+    margin-top: 20px;
+}
+
+
+li {
+    /*contenedor de la lista como un contenedor flexible. Esto significa que los elementos hijos (en este caso, el contenido dentro de cada <li>) pueden ser dispuestos en filas o columnas, y pueden ser alineados y distribuidos de varias maneras.*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+
+span {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color:var(--color-secundario);
+    margin-top: 10px; 
+}
+
+
 body {
     background-color: black;
     color: var(--color-principal);
@@ -35,45 +157,6 @@ h1 {
     margin: 20px ;
 }
 
-
-.navegacion-principal {
-    text-align: center;
-    width: 100%;
-}
-
-.menu-navegacion {
-    /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
-    display: flex;
-    /*Establece el ancho del elemento dentro del contenedor (90%)*/
-    width: 100%;
-    /*max-width: 1000px;*/
-    /*margin: auto;*/
-    /*tamaño del texto dentro del menú de navegación*/
-    color: #fff;
-    font-size: 35px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #3FBA3B;
-    /*Elimina los marcadores de lista */
-    list-style: none;
-    /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
-    padding: 0px;
-    /*plica esquinas redondeadas*/
-    border-radius: 50px;
-    /* Añade una sombra alrededor del elemento.*/
-    box-shadow: 0 0 100px var(--color-secundario);
-}
-
-
-/*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
-.menu-navegacion li  a {
-    /*quita la decoración predeterminada de los enlaces*/
-    text-decoration: none;
-    /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
-    padding: 10px;
-    /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
-    display: block;
-    color: var(--color-principal);
-}
 
 
 .contenedor1 {
@@ -102,19 +185,6 @@ h1 {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px; 
     border-radius: 10px; 
-}
-
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-
-ul li {
-    font-size: 20px;
-    color: var(--color-principal);
-    margin-bottom: 10px; 
 }
 
 

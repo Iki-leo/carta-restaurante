@@ -11,13 +11,12 @@ margin: 0; y padding: 0; establecen el margen y el relleno de todos los elemento
 /* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
 @media (min-width: 576px) {
     /*Se refiere a cualquier elemento con la clase "contenido"*/
-    .contenido {
-        /**diseño flexible para el elemento "contenido", lo que significa que sus elementos secundarios (como divs o elementos de lista) pueden ajustarse y reorganizarse según el espacio disponible.*/
-        display: flex;
-        /*Agrega un espacio de 20 píxeles entre los elementos secundarios de "contenido". Esto proporciona un espaciado uniforme entre ellos.*/
-        gap: 20px;
+    h2 {
+        font-size: 20px; /* Ejemplo: Tamaño de fuente más pequeño para pantallas pequeñas */
     }
-}
+
+    }
+
 
 
 /*establece el color de fondo y el tipo de letra que se utilizará */
@@ -73,10 +72,8 @@ h2 {
 /*justify y align centran el contenido horizontal y  verticalmente*/
     justify-content: center;
     align-items: center;
-/*height en este caso me ocupa toda la pantalla*/
+/*height 100vh me afecta a la altura de la caja  */
     height: 100vh;
-    background-color: black;
-    
 }
 
 
@@ -89,16 +86,14 @@ h2 {
 
 
 .contenido {
-    /*Agrega un espacio en la parte superior del contenido. Esto es un espacio entre el borde superior del contenedor y el contenido de dentro*/
-    padding-top: 10px;
-    /*Establece el modo de visualización como "flexbox", lo que permite un mayor control sobre el diseño y la alineación de los elementos secundarios*/
+        /*Establece el modo de visualización como "flexbox", lo que permite un mayor control sobre el diseño y la alineación de los elementos secundarios*/
     display: flex;
-    /*significa que los elementos se apilarán verticalmente uno encima del otro en lugar de horizontalmente.*/
+        /*Agrega un espacio en la parte superior del contenido. Esto es un espacio entre el borde superior del contenedor y el contenido de dentro*/
+    padding-top: 10px;
+        /*significa que los elementos se apilarán verticalmente uno encima del otro en lugar de horizontalmente.*/
     flex-direction: column;
-    /*Centra los elementos*/
+        /*Centra los elementos*/
     align-items: center;
-    /*/* Opcional: para dar un color de fondo */
-    background-color: black; 
 }
 
 
@@ -112,9 +107,9 @@ h2 {
 .menu-navegacion {
     /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
     display: flex;
-    /*Establece el ancho del elemento dentro del contenedor (90%)*/
-    width: 90%;
-    /*tamaño del texto dentro del menú de navegación*/
+    /*Establece el ancho del elemento dentro del contenedor (100%)*/
+    width: 100%;
+    /*tamaño y tamaño del texto dentro del menú de navegación*/
     color: #fff;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -122,8 +117,7 @@ h2 {
     /*Elimina los marcadores de lista */
     list-style: none;
     /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
-    padding: 0px;
-    /*plica esquinas redondeadas*/
+    /*Aplica esquinas redondeadas*/
     border-radius: 10px;
     /* Añade una sombra alrededor del elemento.*/
     box-shadow: 0 0 25px var(--color-secundario);
@@ -137,7 +131,7 @@ h2 {
     /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
     padding: 10px;
     /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
-    display: block;
+    display: flex; 
     color: var(--color-principal);
 }
 
