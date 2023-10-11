@@ -52,23 +52,14 @@ body {
     max-height: 150%;
 }
 
-    /*img). Establecen un ancho y alto de 750 píxeles, centran la imagen en el bloque usando margin-left y margin-right, y se aseguran de que sea un elemento de tipo bloque display: block;*/
-img {
-    width: 750px;
-    height: 750px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+.contenido {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
 }
-    
-    
-    
-    .contenido {
-        display: flex;
-        padding-top: 10px;
-        flex-direction: column;
-        align-items: center;
-    }
     
     
     /*cualquier texto o contenido dentro de .navegacion-principal se centrará*/
@@ -163,12 +154,6 @@ li {
 }
 
 
-span {
-    
-    
-    
-    
-}
 
 
 .precio {
@@ -194,6 +179,37 @@ span {
     text-decoration: underline;
 }
 
+
+.menu-navegacion {
+    /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
+    display: flex;
+    /*Establece el ancho del elemento dentro del contenedor (100%)*/
+    width: 100%;
+    /*tamaño y tamaño del texto dentro del menú de navegación*/
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3FBA3B;
+    /*Elimina los marcadores de lista */
+    list-style: none;
+    /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
+    /*Aplica esquinas redondeadas*/
+    border-radius: 10px;
+    /* Añade una sombra alrededor del elemento.*/
+    box-shadow: 0 0 25px var(--color-secundario);
+}
+
+
+/*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
+.menu-navegacion li  a {
+    /*quita la decoración predeterminada de los enlaces*/
+    text-decoration: none;
+    /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
+    padding: 10px;
+    /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
+    display: flex; 
+    color: var(--color-principal);
+}
 
 
 /*estilos se aplican al elemento "footer", que generalmente se encuentra al final de una página web y contiene información como créditos, enlaces de contacto, etc.*/
