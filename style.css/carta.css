@@ -4,13 +4,11 @@
 }
 
 
-/* Este bloque de código define un conjunto de estilos que se aplicarán cuando el ancho de la pantalla sea de al menos 992 píxeles.*/
+
 @media (min-width: 576px) {
-    /*Se refiere a cualquier elemento con la clase "contenido"*/
+
     .contenido {
-        /**diseño flexible para el elemento "contenido", lo que significa que sus elementos secundarios (como divs o elementos de lista) pueden ajustarse y reorganizarse según el espacio disponible.*/
         display: flex;
-        /*Agrega un espacio de 20 píxeles entre los elementos secundarios de "contenido". Esto proporciona un espaciado uniforme entre ellos.*/
         gap: 20px;
     }
 }
@@ -23,7 +21,7 @@ body {
 }
 
 
-/*s necesario ponerlo en todas los documentos?*/
+
 :root {
     --color-principal: white;
     --color-secundario: #3FBA3B;
@@ -33,22 +31,17 @@ body {
 
 
 
-/*contenedor de la imagen*/
+
 .logo-zaap {
-    /*contenedor flexible*/
     display: flex;
-    /*justify y align centran el contenido horizontal y  verticalmente*/
     justify-content: center;
         align-items: center;
-    /*height en este caso me ocupa toda la pantalla*/
     height: 100vh;
 }
     
     
 .logo-zaap img {
-    /*anchura máxima de la imagen se establece en un 150% del tamaño del contenedor */
     max-width: 150%;
-        /*establece la altura máxima de la imagen en un 150% del  tamaño del contenedor*/
     max-height: 150%;
 }
 
@@ -62,41 +55,30 @@ body {
 }
     
     
-    /*cualquier texto o contenido dentro de .navegacion-principal se centrará*/
+
 .navegacion-principal {
     text-align: center;
 }
     
     
 .menu-navegacion {
-        /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
     display: flex;
-        /*Establece el ancho del elemento dentro del contenedor (90%)*/
     width: 100%;
-        /*tamaño del texto dentro del menú de navegación*/
     color: #fff;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #3FBA3B;
-        /*Elimina los marcadores de lista */
     list-style: none;
-        /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
-        
-        /*plica esquinas redondeadas*/
     border-radius: 10px;
-        /* Añade una sombra alrededor del elemento.*/
     box-shadow: 0 0 25px var(--color-secundario);
         
     }
     
     
-    /*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
+
     .menu-navegacion li  a {
-        /*quita la decoración predeterminada de los enlaces*/
         text-decoration: none;
-        /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
         padding: 10px;
-        /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
         display: block ;
         color: var(--color-principal);
     }
@@ -110,14 +92,12 @@ body {
     padding-top: 20px;
 }
 
-/*Reglas que se aplican en el contenedor*/
 
-/*Reglas que se aplican en la imagen dentro del contenedor*/
 .picante img {
     width: 150px;
     height: 150px; 
 }
-/*el resto de elementos varian sus estilos*/
+
 
 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -132,21 +112,16 @@ ul {
 }
 
 ul li img {
-    /*width: 500px;: Establece el ancho de las imágenes a 500 píxeles.
-height: auto;: Hace que la altura de la imagen se ajuste automáticamente para mantener la proporción original de la imagen después de cambiar el ancho.*/
     width: 500px;
     height: auto;
     border: 10px solid var(--color-principal);
     border-radius: 30px;
     box-shadow: 0 0 30px var(--color-secundario);
-    /*margin-bottom: 100px;: Añade un margen de 100 píxeles en la parte inferior de las imágenes.
-margin-top: 20px;: Añade un margen de 20 píxeles en la parte superior de las imágenes.*/
     margin-top: 200px;
 }
 
 
 li {
-    /*contenedor de la lista como un contenedor flexible. Esto significa que los elementos hijos (en este caso, el contenido dentro de cada <li>) pueden ser dispuestos en filas o columnas, y pueden ser alineados y distribuidos de varias maneras.*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,38 +156,26 @@ li {
 
 
 .menu-navegacion {
-    /*el elemento se comporte como un contenedor flexible. Los elementos hijos dentro de este contenedor podrán ser distribuidos y alineados de manera flexible.*/
     display: flex;
-    /*Establece el ancho del elemento dentro del contenedor (100%)*/
     width: 100%;
-    /*tamaño y tamaño del texto dentro del menú de navegación*/
     color: #fff;
     font-size: 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #3FBA3B;
-    /*Elimina los marcadores de lista */
     list-style: none;
-    /*Elimina cualquier espacio adicional  dentro del elemento. Esto asegura que el contenido esté pegado al borde del elemento.*/
-    /*Aplica esquinas redondeadas*/
     border-radius: 10px;
-    /* Añade una sombra alrededor del elemento.*/
     box-shadow: 0 0 25px var(--color-secundario);
 }
 
-
-/*estilos se aplican a los elementos <a> que están dentro de los elementos "li"*/
 .menu-navegacion li  a {
-    /*quita la decoración predeterminada de los enlaces*/
     text-decoration: none;
-    /*Añade un espacio alrededor del contenido del enlace. Esto asegura que haya espacio entre el texto y el borde del enlace.*/
     padding: 10px;
-    /*Hace que el enlace se comporte como un bloque, ocupando todo el ancho del contenedor. Esto significa que se extenderá horizontalmente para llenar su contenedor.*/
     display: flex; 
     color: var(--color-principal);
 }
 
 
-/*estilos se aplican al elemento "footer", que generalmente se encuentra al final de una página web y contiene información como créditos, enlaces de contacto, etc.*/
+
 .footer-principal {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:white;
